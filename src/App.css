@@ -1,0 +1,76 @@
+body{
+  background: lavender;
+  padding: 2rem;
+}
+.App{
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+  min-height: 100vh;
+  background: #f2f0ff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.form-section, .article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.form-section input{
+  padding: 1.5rem 2.4rem;
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+}
+.form-section input:focus{
+  border: 1px solid lightskyblue;
+  outline: none;
+}
+.form-section input[type = submit]{
+  background-color: lightskyblue;
+  color: white;
+  font-size: 1.6rem;
+}
+.form-section input[type = submit]:hover {
+  background-color: deepskyblue;
+  transition: all 0.4s;
+  box-shadow: inset 0px 0px 5px lightskyblue;
+}
+.grid{
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.display-article{
+  overflow: auto;
+  /* width: 300px; */
+  margin: 2rem auto;
+  height: 500px;
+  /* border: 1px solid lightskyblue; */
+  padding: 2rem;
+}
+.heading-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.4rem;
+  margin: 2rem 0;
+  font-family: primaryFont;
+}
+header{
+  width: 100%;
+}
+.color{
+  color: #333;
+}
+@media screen and (max-width: 600px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}
